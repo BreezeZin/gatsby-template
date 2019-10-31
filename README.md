@@ -15,7 +15,7 @@
 ```js
 {
   "editor.formatOnPaste": true,
-  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 0,
   "gitlens.currentLine.enabled": false,
@@ -88,4 +88,12 @@ import "./src/css/styles.css"
 module.exports = {
   plugins: ["gatsby-plugin-postcss"],
 }
+```
+
+### Root HTML file
+
+Copy to src folder to modify:
+
+```
+cp .cache/default-html.js src/html.js
 ```
