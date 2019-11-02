@@ -75,6 +75,15 @@ Create a new config file:
 Create CSS file within source:
 ```/src/css/styles.css```
 
+Use tailwind imports:
+```css
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+```
+
 Import with:
 
 ```js
