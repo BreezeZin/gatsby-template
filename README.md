@@ -57,8 +57,9 @@
 - postcss-nested
 - stylelint-config-recommended
 - tailwindcss
+- gatsby-plugin-postcss
 
-```npm i autoprefixer postcss-import postcss-nested stylelint-config-recommended tailwindcss```
+```npm i autoprefixer postcss-import postcss-nested stylelint-config-recommended tailwindcss gatsby-plugin-postcss```
 
 ### Tailwind CSS
 
