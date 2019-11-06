@@ -91,6 +91,13 @@ Import with:
 import "./src/css/styles.css"
 ```
 
+Testing generated CSS file:
+```
+postcss src/css/styles.css -o test.css
+```
+
+
+
 ### Plugins
 
 ```js
