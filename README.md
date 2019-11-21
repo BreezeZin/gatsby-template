@@ -61,7 +61,7 @@ Copy and paste into Git BASH
 (
 #!/bin/sh
 # Additional NPM packages
-npm i autoprefixer postcss-import postcss-nested stylelint-config-recommended tailwindcss gatsby-plugin-postcss
+npm i autoprefixer postcss-import postcss-nested stylelint-config-recommended tailwindcss gatsby-plugin-postcss gatsby-plugin-sitemap
 # Create Tailwind CSS config file
 npx tailwind init
 # Copy root HTML file to modify
