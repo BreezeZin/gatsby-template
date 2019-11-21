@@ -9,6 +9,8 @@
 -   Stylelint
 -   Tailwind CSS IntelliSense
 -   Gitlens
+-   HTML CSS Support
+
 
 ### User Settings 
 
