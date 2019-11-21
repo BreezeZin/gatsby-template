@@ -51,11 +51,11 @@
 
 ## Project Setup
 
-(1) gatsby new \<project-name>
+New gatsby project `gatsby new <project-name>`
 
-(2) Copy all templates files into new project folder
+Copy all templates files into new project folder
 
-(3) Copy and paste into Git BASH
+Copy and paste into Git BASH
 
 ```bash
 (
