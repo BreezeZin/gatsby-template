@@ -4,15 +4,14 @@
 
 ### Extensions
 
--   EditorConfig
--   Prettier
--   Stylelint
--   Tailwind CSS IntelliSense
--   Gitlens
--   HTML CSS Support
+- EditorConfig
+- Prettier
+- Stylelint
+- Tailwind CSS IntelliSense
+- Gitlens
+- HTML CSS Support
 
-
-### User Settings 
+### User Settings
 
 ```js
 {
@@ -50,69 +49,28 @@
 }
 ```
 
-## NPM Packages
+## Project Setup
 
-### package.json
+(1) gatsby new \<project-name>
 
-- autoprefixer
-- postcss-import
-- postcss-nested
-- stylelint-config-recommended
-- tailwindcss
-- gatsby-plugin-postcss
+(2) Copy all templates files into new project folder
 
-```npm i autoprefixer postcss-import postcss-nested stylelint-config-recommended tailwindcss gatsby-plugin-postcss```
+(3) Copy and paste into Git BASH
 
-### Tailwind CSS
-
-Create a new config file:
-
-```npx tailwind init```
-
-## Gatsby
-
-
-### Import CSS
-
-Create CSS file within source:
-```/src/css/styles.css```
-
-Use tailwind imports:
-```css
-@import "tailwindcss/base";
-
-@import "tailwindcss/components";
-
-@import "tailwindcss/utilities";
-```
-
-Import with:
-
-```js
-// gatsby-browser.js
-import "./src/css/styles.css"
-```
-
-Testing generated CSS file:
-```
-postcss src/css/styles.css -o test.css
-```
-
-
-
-### Plugins
-
-```js
-// gatsby-config.js
-module.exports = {
-  plugins: ["gatsby-plugin-postcss"],
-}
-```
-
-### Root HTML file
-
-Copy to src folder to modify:
-
-```
+```bash
+(
+#!/bin/sh
+# Additional NPM packages
+npm i autoprefixer postcss-import postcss-nested stylelint-config-recommended tailwindcss gatsby-plugin-postcss
+# Create Tailwind CSS config file
+npx tailwind init
+# Copy root HTML file to modify
 cp .cache/default-html.js src/html.js
+)
+```
+
+To test generated CSS file add the following NPM script:
+
+```
+"css-test": "postcss src/css/styles.css -o test.css",
 ```
