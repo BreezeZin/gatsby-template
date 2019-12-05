@@ -1,0 +1,18 @@
+@each $property in (none, all, opacity) {
+  .transition-$property {
+    transition: $property 250ms ease;
+  }
+}
+
+@each $duration in (0, 100, 500) {
+  .transition-$duration {
+    /* prettier-ignore */
+    transition-duration: $(duration)ms;
+  }
+}
+
+@each $function in (linear, ease, ease-in, ease-out, ease-in-out) {
+  .transition-$function {
+    transition-timing-function: $function;
+  }
+}

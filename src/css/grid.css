@@ -1,0 +1,27 @@
+@responsive {
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @for $i from 1 to 12 {
+    .grid-col-$i {
+      grid-template-columns: repeat($i, 1fr);
+    }
+    .col-span-$i {
+      grid-column: span $i;
+    }
+  }
+
+  @each $i in (0, 4, 6, 8, 12, 16) {
+    .row-gap-$i {
+      row-gap: theme("spacing.$i");
+    }
+    .col-gap-$i {
+      column-gap: theme("spacing.$i");
+    }
+    .gap-$i {
+      gap: theme("spacing.$i");
+    }
+  }
+}
