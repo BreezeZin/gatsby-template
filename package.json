@@ -1,0 +1,49 @@
+{
+  "name": "gatsby-starter-default",
+  "version": "0.1.0",
+  "dependencies": {
+    "autoprefixer": "^9.7.2",
+    "classnames": "^2.2.6",
+    "gatsby": "^2.17.11",
+    "gatsby-image": "^2.2.31",
+    "gatsby-plugin-extract-schema": "0.0.5",
+    "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-offline": "^3.0.19",
+    "gatsby-plugin-postcss": "^2.1.15",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-sitemap": "^2.2.21",
+    "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-sharp": "^2.3.3",
+    "postcss-advanced-variables": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-graphql": "^3.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "npm run lint && gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "npm run lint && gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "css-test": "postcss src/css/styles.css -o test.css",
+    "lint": "eslint --ignore-path .gitignore ."
+  }
+}
