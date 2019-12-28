@@ -10,6 +10,7 @@
 - Tailwind CSS IntelliSense
 - Gitlens
 - HTML CSS Support
+- ESLint
 
 ### User Settings
 
@@ -51,26 +52,16 @@
 
 ## Project Setup
 
-New gatsby project `gatsby new <project-name>`
-
-Copy all templates files into new project folder
-
 Copy and paste into Git BASH
 
 ```bash
 (
 #!/bin/sh
-# Additional NPM packages
-npm i autoprefixer postcss-import postcss-advanced-variables postcss-nested stylelint-config-recommended tailwindcss gatsby-plugin-postcss gatsby-plugin-sitemap
+# Setup git
+git init
 # Create Tailwind CSS config file
-npx tailwind init
-# Copy root HTML file to modify
-cp .cache/default-html.js src/html.js
+npm install
 )
 ```
 
-To test generated CSS file add the following NPM script:
-
-```
-"css-test": "postcss src/css/styles.css -o test.css",
-```
+Commit setup files and push to github

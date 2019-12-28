@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.example.com`
+    siteUrl: `https://www.example.com`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -10,9 +10,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        path: "./src/images/"
-      }
+        path: "./src/images/",
+      },
     },
-    "gatsby-plugin-sitemap"
-  ]
-};
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-extract-schema",
+  ],
+}

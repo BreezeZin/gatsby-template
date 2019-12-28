@@ -6,13 +6,13 @@ module.exports = {
       md: "768px",
       lg: "896px",
       xl: "1024px",
-      "2xl": "1280px"
+      "2xl": "1280px",
     },
-    extend: {}
+    extend: {},
   },
   variants: {},
   plugins: [],
   corePlugins: {
-    container: false
-  }
-};
+    container: false,
+  },
+}
