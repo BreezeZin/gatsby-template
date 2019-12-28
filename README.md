@@ -59,7 +59,7 @@ Copy and paste into Git BASH
 #!/bin/sh
 # Setup git
 git init
-# Create Tailwind CSS config file
+# Install packages
 npm install
 )
 ```
