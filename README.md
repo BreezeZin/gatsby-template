@@ -6,11 +6,9 @@
 
 - EditorConfig
 - Prettier
+- ESLint
 - Stylelint
 - Tailwind CSS IntelliSense
-- Gitlens
-- HTML CSS Support
-- ESLint
 
 ### User Settings
 
@@ -52,16 +50,18 @@
 
 ## Project Setup
 
-Copy and paste into Git BASH
+1. Copy file into new folder
+
+2. Copy and paste code into Git BASH
 
 ```bash
 (
 #!/bin/sh
 # Setup git
 git init
-# Create Tailwind CSS config file
+# Install all packages
 npm install
 )
 ```
 
-Commit setup files and push to github
+3. Commit setup files and push to github

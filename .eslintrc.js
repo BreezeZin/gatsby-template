@@ -6,6 +6,7 @@ module.exports = {
   extends: ["airbnb"],
   plugins: ["graphql"],
   rules: {
+    // Used to validate GraphQL queries
     "graphql/template-strings": [
       "error",
       {
@@ -29,5 +30,7 @@ module.exports = {
     "react/jsx-closing-tag-location": "off",
     "operator-linebreak": "off",
     "no-unused-vars": ["warn", "all"],
+    "react/jsx-props-no-spreading": "off",
+    "object-curly-newline": "off",
   },
 }
