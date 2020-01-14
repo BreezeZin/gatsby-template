@@ -50,7 +50,7 @@
 
 ## Project Setup
 
-1. Copy file into new folder
+1. Copy files into new folder
 
 2. Copy and paste code into Git BASH
 
