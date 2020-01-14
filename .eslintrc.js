@@ -1,9 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    node: true,
   },
-  extends: ["airbnb"],
+  extends: ["airbnb", "airbnb/hooks"],
   plugins: ["graphql"],
   rules: {
     // Used to validate GraphQL queries
