@@ -1,0 +1,36 @@
+.transition {
+  transition-property: background-color, border-color, color, opacity, transform;
+}
+
+.transition-colors {
+  transition-property: background-color, border-color, color;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.transition-transform {
+  transition-property: transform;
+}
+
+.transition-none {
+  transition-property: none;
+}
+
+.transition-all {
+  transition-property: all;
+}
+
+@each $duration in (0, 100, 200, 300, 500) {
+  .transition-$duration {
+    /* prettier-ignore */
+    transition-duration: $(duration)ms;
+  }
+}
+
+@each $function in (linear, ease-in, ease-out, ease-in-out) {
+  .transition-$function {
+    transition-timing-function: $function;
+  }
+}

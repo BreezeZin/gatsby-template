@@ -1,7 +1,6 @@
 @responsive {
   .grid {
     display: grid;
-    gap: 1rem;
   }
 
   @for $i from 1 to 12 {
@@ -15,13 +14,13 @@
 
   @each $i in (0, 4, 6, 8, 12, 16) {
     .row-gap-$i {
-      row-gap: theme("spacing.$i");
+      grid-row-gap: theme("spacing.$i");
     }
     .col-gap-$i {
-      column-gap: theme("spacing.$i");
+      grid-column-gap: theme("spacing.$i");
     }
     .gap-$i {
-      gap: theme("spacing.$i");
+      grid-gap: theme("spacing.$i");
     }
   }
 }
