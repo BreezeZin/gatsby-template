@@ -40,7 +40,7 @@
     "stylelint": "^13.0.0"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build && npm run lint",
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve": "npm run lint && gatsby serve",

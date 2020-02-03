@@ -17,5 +17,29 @@ module.exports = {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "no-unused-vars": ["warn", "all"],
     "global-require": "off",
+    "react/self-closing-comp": [
+      "error",
+      {
+        component: true,
+        html: false,
+      },
+    ],
+    "react/jsx-closing-tag-location": "off",
+    "react/no-unescaped-entities": [
+      "error",
+      {
+        forbid: [
+          {
+            char: ">",
+            alternatives: ["&gt;"],
+          },
+          {
+            char: "}",
+            alternatives: ["&#125;"],
+          },
+        ],
+      },
+    ],
+    "react/jsx-props-no-spreading": "off",
   },
 }
